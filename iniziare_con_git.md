@@ -32,7 +32,7 @@ In alternativa possiamo digitare `git commit -m "testo del commit"`.
 
 # Capitolo 3 - Questione di tempo
 
-Quando creiamo un commit è come se aggiungessimo un nodo alla nostra timeline.
+Quando creiamo un commit è come se aggiungessimo un nodo alla nostra .
 
 Se ad esempio ho un file contenente una storia, per esempio:
 
@@ -44,11 +44,11 @@ E volessi aggiornare il file in modo che contenga per esempio:
 >
 > Cappuccetto rosso incontra il lupo.
 
-Devo creare un nodo nella timeline, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
+Devo creare un nodo nella linea temporale, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
 
 <br>
 
-# Capitolo 4 - Spostarsi nella timeline
+# Capitolo 4 - Spostarsi nella linea temporale
 
 Prima o poi qualcuno commetterà un errore e cappuccetto rosso verrà mangiato dal lupo, ma grazie a git potremo spostarci ad una versione precedente della nostra storia in cui ciò non è ancora successo.
 
@@ -56,5 +56,10 @@ Per farlo dovremo spostare la "testa", il puntatore a cui git fa riferimento , d
 
 In alternativa possiamo utilizzare il comando `git checkout HEAD^` per spostarci indietro di un solo commit.
 
-Per andare in avanti all'ultimo commit basta digitare `git checkout "nome_del_branch"`
+Per andare in avanti all'ultimo commit basta digitare `git checkout nome_del_branch o `git checkout -`
 
+Avendo una linea temporale, magari anche piuttosto lunga e complessa, avremo bisogno di un modo per viaggiare velocemente al suo interno, come dei portali temporali, chiamati **branches**.
+
+Creiamo un branch con il comando `git branch nome_del_branch` in un punto comodo e poi possiamo spostarci semplicemente digitando `git checkout nome_del_branch`
+
+Ora, quando ci sposteremo tra i nodi dovremo fare attenzione a come lo faremo, digitando infatti il comando `git checkout nome_del_branch` ci sposteremo sul branch e in caso di nuovi commit il branch crescerà con noi e il branch punterà sempre all'ultimo commit, mentre se digiteremo `git branch --detach nome_del_branch` ci sposteremo all'ultimo commit del branch e in caso di nuovi commit la linea temporale crescerà, ma il branch punterà sempre allo stesso commit
