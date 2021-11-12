@@ -8,9 +8,11 @@
 
     **Git** è una VCS (Version Control System), ovvero un programma che ti permette di avere pieno controllo sulle versioni di un progetto nel tempo.
 
-    La peculiarità di un VCS è che, in caso tu ne abbia bisogno, ti permette di ripristinare i file o anche l'intero progetto ad uno stato precedente, revisionare le modifiche fatte nel tempo, in caso di condivisione del progetto anche di vedere chi ha cambiato qualcosa, chi ha introdotto una funzionalità, un problema, chi ha eliminato un file importante e anche di recuperarlo in caso ti serva.<br><br>
+    La peculiarità di un VCS è che, in caso tu ne abbia bisogno, ti permette di ripristinare i file o anche l'intero progetto ad uno stato precedente, revisionare le modifiche fatte nel tempo, in caso di condivisione del progetto anche di vedere chi ha cambiato qualcosa, chi ha introdotto una funzionalità, un problema, chi ha eliminato un file importante e anche di recuperarlo in caso ti serva.
 
+    <br><br>
 
+<br>
 
 - # Capitolo 1 - La creazione
 
