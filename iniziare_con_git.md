@@ -18,11 +18,11 @@ A questo punto il nostro repository verrà inizializzato e da qui in poi potremo
 
 <br>
 
-# Capitolo 2 - Il nostro primo commit
+# Capitolo 2 - Nuovi nodi
 
 A questo punto avremo il nostro repository, ma manca ancora la parte fondamentale, i file!
 
-Creiamo, spostiamo, scriviamo, andiamo a popolare la nostra cartella con tutto ciò di cui abbiamo bisogno e quando avremo finito dovremo dire a git quali file prendere in considerazione dando il comando `git add "nome del file"`  oppure `git add .` per aggiungere tutti i file.
+Creiamo, spostiamo, scriviamo, andiamo a popolare la nostra cartella con tutto ciò di cui abbiamo bisogno e quando avremo finito dovremo dire a git quali file prendere in considerazione dando il comando `git add "nome del file"`  oppure `git add .` per aggiungere tutti i file all'area di staging.
 
 Ora che abbiamo i nostri file dobbiamo creare uno stage, una "versione nel tempo", del nostro repository e lo facciamo tramite il comando `git commit` e ci si aprirà un editor dove andare a scrivere il nostro commit, ovvero il testo che racchiude cosa abbiamo fatto, quali modifiche a quali file, e dovrà essere esplicativo in modo da rendere più facile lavorarci durante il tempo. 
 
@@ -30,3 +30,28 @@ In alternativa possiamo digitare `git commit -m "testo del commit"`.
 
 <br>
 
+# Capitolo 3 - Questione di tempo
+
+Quando creiamo un commit è come se aggiungessimo un nodo alla nostra timeline.
+
+Se ad esempio ho un file contenente una storia, per esempio:
+
+> Cappuccetto rosso va nel bosco.
+
+E volessi aggiornare il file in modo che contenga per esempio:
+
+> Cappuccetto rosso va nel bosco.
+>
+> Cappuccetto rosso incontra il lupo.
+
+Devo creare un nodo nella timeline, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
+
+<br>
+
+# Capitolo 4 - Spostarsi nella timeline
+
+Prima o poi qualcuno commetterà un errore e cappuccetto rosso verrà mangiato dal lupo, ma grazie a git potremo spostarci ad una versione precedente della nostra storia in cui ciò non è ancora successo.
+
+Per farlo dovremo spostare la "testa", il puntatore a cui git fa riferimento , digitando il comando `git checkout "numero_commit"`, infatti ogni commit ha un codice univoco a cui potremo attingere per spostarci nel tempo.
+
+In alternativa possiamo utilizzare il comando `git checkout HEAD^` per spostarci indietro di un solo commit.
