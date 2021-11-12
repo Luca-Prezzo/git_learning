@@ -55,3 +55,6 @@ Prima o poi qualcuno commetterà un errore e cappuccetto rosso verrà mangiato d
 Per farlo dovremo spostare la "testa", il puntatore a cui git fa riferimento , digitando il comando `git checkout "numero_commit"`, infatti ogni commit ha un codice univoco a cui potremo attingere per spostarci nel tempo.
 
 In alternativa possiamo utilizzare il comando `git checkout HEAD^` per spostarci indietro di un solo commit.
+
+Per andare in avanti all'ultimo commit basta digitare `git checkout "nome_del_branch"`
+
