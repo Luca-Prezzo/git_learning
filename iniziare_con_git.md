@@ -32,7 +32,7 @@ In alternativa possiamo digitare `git commit -m "testo del commit"`.
 
 # Capitolo 3 - Questione di tempo
 
-Quando creiamo un commit è come se aggiungessimo un nodo alla nostra .
+Quando creiamo un commit è come se aggiungessimo un nodo alla nostra linea temporale.
 
 Se ad esempio ho un file contenente una storia, per esempio:
 
