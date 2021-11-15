@@ -1,5 +1,7 @@
 # Iniziare con Git
 
+<br>
+
 # Prefazione
 
 **Git** è una VCS (Version Control System), ovvero un programma che ti permette di avere pieno controllo sulle versioni di un progetto nel tempo.
