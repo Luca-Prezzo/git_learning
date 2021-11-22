@@ -108,4 +108,4 @@ La particolarità di questo strumento è che io posso lavorare a due versioni di
 
 Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni.
 
-Digitando il comando `git merge branch_1 branch_2` 
+Digitando il comando `git merge branch_1 branch_2` git cercherà di unire i file presenti nei due branch in un unico branch 
