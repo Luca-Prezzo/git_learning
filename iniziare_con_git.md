@@ -3,12 +3,7 @@
 <br>
 
 # Prefazione
-
-Una VCS (Version Control System), ovvero un sistema che ti permette di avere pieno controllo sulle versioni di un progetto nel tempo.
-
-La peculiarità di un VCS è che, in caso tu ne abbia bisogno, ti permette di ripristinare i file o anche l'intero progetto ad uno stato precedente, revisionare le modifiche fatte nel tempo, in caso di condivisione del progetto anche di vedere chi ha cambiato qualcosa, chi ha introdotto una funzionalità, un problema, chi ha eliminato un file importante e anche di recuperarlo in caso ti serva.
-
-<br>
+suca<br>
 
 # Capitolo 1 - La creazione
 
@@ -104,8 +99,6 @@ Quando digitiamo il comando `git branch nome_del_branch` viene creata una nuova 
 
 Se noi andiamo a fare il checkout digitando `git checkout nome_del_branch` ci sposteremo sull'etichetta e d'ora in poi ogni nuovo commit sarà aggiunto a questo branch.
 
-La particolarità di questo strumento è che io posso lavorare a due versioni distinte e separate dello stesso progetto, ad esempio se sto scrivendo un software e voglio implementare delle funzioni posso creare un branch per lo sviluppo e rimanere le versioni stabili sul branch master.
+La particolarità di questo strumento è che io posso lavorare a due versioni distinte e separate dello stesso progetto, ad esempio se sto scrivendo un software e voglio implementare delle funzioni posso creare un branch per lo sviluppo e rimanere le versioni stabili sul branch master finché non avrò finito con lo sviluppo.
 
-Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni.
-
-Digitando il comando `git merge branch_1 branch_2` git cercherà di unire i file presenti nei due branch in un unico branch 
+Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni con il comando `git merge branch_1 branch_2` e git cercherà di unire i file presenti nei due branch in uno solo 
