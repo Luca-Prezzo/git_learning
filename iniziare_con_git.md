@@ -4,7 +4,7 @@
 
 # Prefazione
 
-**Git** è una VCS (Version Control System), ovvero un programma che ti permette di avere pieno controllo sulle versioni di un progetto nel tempo.
+Una VCS (Version Control System), ovvero un sistema che ti permette di avere pieno controllo sulle versioni di un progetto nel tempo.
 
 La peculiarità di un VCS è che, in caso tu ne abbia bisogno, ti permette di ripristinare i file o anche l'intero progetto ad uno stato precedente, revisionare le modifiche fatte nel tempo, in caso di condivisione del progetto anche di vedere chi ha cambiato qualcosa, chi ha introdotto una funzionalità, un problema, chi ha eliminato un file importante e anche di recuperarlo in caso ti serva.
 
@@ -17,6 +17,8 @@ Nel nostro caso useremo **Git**, il più famoso VCS, che ci permetterà di crear
 Per creare un repository locale basta creare la cartella, spostarci al suo interno e dare da terminale il comando `git init`.
 
 A questo punto il nostro repository verrà inizializzato e da qui in poi potremo lavorarci
+
+<img src="/home/luca/Scaricati/Untitled Diagram.drawio(1).png" alt="La creazione" style="zoom:100%;" />
 
 <br>
 
@@ -51,6 +53,10 @@ E volessi aggiornare il file in modo che contenga per esempio:
 Devo creare un nodo nella linea temporale, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
 
 Quando il commit sarà creato, il mio puntatore, l'HEAD, si sposterò verso il nuovo nodo
+
+
+
+![](/home/luca/Scaricati/commit.drawio.png)
 
 <br>
 
@@ -90,5 +96,16 @@ Ora, quando ci sposteremo tra i nodi dovremo fare attenzione a come lo faremo, d
 
 <br>
 
-# Capitolo 5 - Linee temporali parallele
+# Capitolo 5 - Linee temporali parallele, i "branch"
 
+Git ci mette a disposizione anche altri strumenti potentissimi, uno fra tutti è quello dei branch, diramazioni, delle linee temporali parallele che ci permettono di sviluppare il progetto in modo indipendente da branch a branch.
+
+Quando digitiamo il comando `git branch nome_del_branch` viene creata una nuova diramazione del nostro repository.
+
+Se noi andiamo a fare il checkout digitando `git checkout nome_del_branch` ci sposteremo sull'etichetta e d'ora in poi ogni nuovo commit sarà aggiunto a questo branch.
+
+La particolarità di questo strumento è che io posso lavorare a due versioni distinte e separate dello stesso progetto, ad esempio se sto scrivendo un software e voglio implementare delle funzioni posso creare un branch per lo sviluppo e rimanere le versioni stabili sul branch master.
+
+Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni.
+
+Digitando il comando `git merge branch_1 branch_2` 
