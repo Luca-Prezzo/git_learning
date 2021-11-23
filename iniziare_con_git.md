@@ -2,9 +2,6 @@
 
 <br>
 
-# Prefazione
-suca<br>
-
 # Capitolo 1 - La creazione
 
 Nel nostro caso useremo **Git**, il più famoso VCS, che ci permetterà di creare un repository locale, che sarà la casa del nostro progetto, mentre per la parte server del progetto utilizzeremo <a href="https://github.com">**Github**</a> che metterà il nostro repository online e noi potremmo accedervi e sincronizzarci anche da altri client.
