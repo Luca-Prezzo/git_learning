@@ -22,7 +22,7 @@ Per creare un repository locale basta creare la cartella, spostarci al suo inter
 
 A questo punto il nostro repository verrà inizializzato e da qui in poi potremo lavorarci
 
-
+<video src="/home/luca/Video/git_init.mp4"></video>
 
 <br>
 
@@ -34,7 +34,7 @@ A questo punto avremo il nostro repository, ma manca ancora la parte fondamental
 
 Creiamo, spostiamo, scriviamo, andiamo a popolare la nostra cartella con tutto ciò di cui abbiamo bisogno e quando avremo finito dovremo dire a git quali file prendere in considerazione dando il comando `git add "nome del file"`  oppure `git add .` per aggiungere tutti i file all'area di staging, e se vogliamo portare indietro qualcosa dall'area di staging possiamo digitare il comando `git restore --staged nome_del_file`
 
-Ora che abbiamo i nostri file dobbiamo creare uno stage, una "versione nel tempo", del nostro repository e lo facciamo tramite il comando `git commit` e ci si aprirà un editor dove andare a scrivere il nostro commit, ovvero il testo che racchiude cosa abbiamo fatto, quali modifiche a quali file, e dovrà essere esplicativo in modo da rendere più facile lavorarci durante il tempo. 
+Ora che abbiamo i nostri file dobbiamo creare uno stage, una "versione nel tempo", del nostro repository e lo facciamo tramite il comando `git commit` e ci si aprirà un editor dove andare a scrivere il messaggio del nostro commit, ovvero il testo che racchiude cosa abbiamo fatto, quali modifiche a quali file, e dovrà essere esplicativo in modo da rendere più facile lavorarci durante il tempo. 
 
 In alternativa possiamo digitare `git commit -m "testo del commit"`.
 
@@ -72,6 +72,8 @@ Quando il commit sarà creato, il mio puntatore, l'HEAD, si sposterò verso il n
 
 # Capitolo 4 - Muoversi nel tempo
 
+<br>
+
 ## Capitolo 4.1 - Avanti e indietro nella linea temporale
 
 Prima o poi qualcuno commetterà un errore e cappuccetto rosso verrà mangiato dal lupo, ma grazie a git potremo spostarci ad una versione precedente della nostra storia in cui ciò non è ancora successo.
@@ -82,7 +84,7 @@ In alternativa possiamo utilizzare il comando `git checkout HEAD^` per spostarci
 
 Per andare in avanti all'ultimo commit basta digitare `git checkout nome_del_branch` o `git checkout -`
 
-
+<br>
 
 ## Capitolo 4.2 - Dove trovo lo sha1 del commit?
 
@@ -118,8 +120,9 @@ Git ci mette a disposizione anche altri strumenti potentissimi, uno fra tutti è
 
 Quando digitiamo il comando `git branch nome_del_branch` viene creata una nuova diramazione del nostro repository.
 
-Se noi andiamo a fare il checkout digitando `git checkout nome_del_branch` ci sposteremo sull'etichetta e d'ora in poi ogni nuovo commit sarà aggiunto a questo branch.
+Se noi andiamo a fare il check-out digitando `git checkout nome_del_branch` ci sposteremo sull'etichetta e d'ora in poi ogni nuovo commit sarà aggiunto a questo branch.
 
 La particolarità di questo strumento è che io posso lavorare a due versioni distinte e separate dello stesso progetto, ad esempio se sto scrivendo un software e voglio implementare delle funzioni posso creare un branch per lo sviluppo e rimanere le versioni stabili sul branch master finché non avrò finito con lo sviluppo.
 
-Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni con il comando `git merge branch_1 branch_2` e git cercherà di unire i file presenti nei due branch in uno solo 
+Quando saremo soddisfatti del nostro branch e queste funzioni vogliamo implementare sul branch master possiamo fare il merge e fondere le due diramazioni con il comando `git merge branch_1 branch_2` e Git cercherà di unire i file presenti nei due branch in uno solo 
+
