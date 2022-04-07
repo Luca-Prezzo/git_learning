@@ -24,6 +24,11 @@ A questo punto il nostro repository verrà inizializzato e da qui in poi potremo
 
 <img src="https://media.giphy.com/media/Qi0QUv3PYvsN49MRd5/giphy-downsized-large.gif" alt="init" style="zoom:150%;" />
 
+
+https://user-images.githubusercontent.com/42065953/162173293-9d57df15-8ae8-489f-b0b7-17d30cd4869f.mp4
+
+
+
 <br>
 
 
