@@ -22,7 +22,7 @@ Per creare un repository locale basta creare la cartella, spostarci al suo inter
 
 A questo punto il nostro repository verrà inizializzato e da qui in poi potremo lavorarci
 
-<video src="https://youtu.be/FtyImK76ymM"></video>
+<img src="https://media.giphy.com/media/Qi0QUv3PYvsN49MRd5/giphy-downsized-large.gif" alt="init" style="zoom:150%;" />
 
 <br>
 
