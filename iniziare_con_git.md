@@ -1,6 +1,18 @@
 # Iniziare con Git
 
+
+
 <br>
+
+
+
+[TOC]
+
+
+
+<br>
+
+
 
 # Capitolo 1 - La creazione
 
@@ -10,9 +22,11 @@ Per creare un repository locale basta creare la cartella, spostarci al suo inter
 
 A questo punto il nostro repository verrà inizializzato e da qui in poi potremo lavorarci
 
-<img src="/home/luca/Scaricati/Untitled Diagram.drawio(1).png" alt="La creazione" style="zoom:100%;" />
+
 
 <br>
+
+
 
 # Capitolo 2 - Nuovi nodi
 
@@ -26,7 +40,11 @@ In alternativa possiamo digitare `git commit -m "testo del commit"`.
 
 Esiste un comando per velocizzare l'aggiunta e il commit dei file ed è `git commit -am "testo del commit"`.
 
+
+
 <br>
+
+
 
 # Capitolo 3 - Questione di tempo
 
@@ -42,17 +60,19 @@ E volessi aggiornare il file in modo che contenga per esempio:
 >
 > Cappuccetto rosso incontra il lupo.
 
-Devo creare un nodo nella linea temporale, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
+Devo creare un nuovo nodo nella linea temporale, e per farlo mi basta aggiungere il file modificato all'area di staging e farne il commit.
 
 Quando il commit sarà creato, il mio puntatore, l'HEAD, si sposterò verso il nuovo nodo
 
 
 
-![](/home/luca/Scaricati/commit.drawio.png)
-
 <br>
 
-# Capitolo 4.1 - Spostarsi nella linea temporale
+
+
+# Capitolo 4 - Muoversi nel tempo
+
+## Capitolo 4.1 - Avanti e indietro nella linea temporale
 
 Prima o poi qualcuno commetterà un errore e cappuccetto rosso verrà mangiato dal lupo, ma grazie a git potremo spostarci ad una versione precedente della nostra storia in cui ciò non è ancora successo.
 
@@ -64,7 +84,7 @@ Per andare in avanti all'ultimo commit basta digitare `git checkout nome_del_bra
 
 
 
-# Capitolo 4.2 - Dove trovo lo sha1 del commit?
+## Capitolo 4.2 - Dove trovo lo sha1 del commit?
 
 Per vedere lo storico dei commit che ho creato nel tempo mi basta digitare il comando `git log`, esso mi restituirà in ordine cronologico tutti i commit che ho eseguito a partire dal più recente.
 
@@ -86,7 +106,11 @@ Creiamo un branch con il comando `git branch nome_del_branch` in un punto comodo
 
 Ora, quando ci sposteremo tra i nodi dovremo fare attenzione a come lo faremo, digitando infatti il comando `git checkout nome_del_branch` ci sposteremo sul branch e in caso di nuovi commit il branch crescerà con noi e il branch punterà sempre all'ultimo commit, mentre se digiteremo `git branch --detach nome_del_branch` ci sposteremo all'ultimo commit del branch e in caso di nuovi commit la linea temporale crescerà, ma il branch punterà sempre allo stesso commit
 
+
+
 <br>
+
+
 
 # Capitolo 5 - Linee temporali parallele, i "branch"
 
