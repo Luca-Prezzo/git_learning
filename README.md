@@ -2,4 +2,5 @@
 
 Impariamo git insieme
 
-Spostiamoci da master a dev
+Creiamo il branch dev e spostiamoci dal master al dev
+Spostiamoci di nuovo su master e facciamo il merge
